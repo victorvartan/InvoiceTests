@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0-preview3-35497" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\InvoiceTest.DataAccess\InvoiceTest.DataAccess.csproj" />
+    <ProjectReference Include="..\InvoiceTest.Models\InvoiceTest.Models.csproj" />
+  </ItemGroup>
+
+</Project>

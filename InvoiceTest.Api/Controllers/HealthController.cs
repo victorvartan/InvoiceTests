@@ -16,7 +16,7 @@ namespace InvoiceTest.Api.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<bool>> Get()
+        public async Task<ActionResult<string>> Get()
         {
             var anyAdmins = await _userService.Any();
             if (!anyAdmins) throw new Exception(Resources.ExceptionMessages.NoUsersInDatabase);
